@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/4ef41755ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/prism.css')}}">
+    <script src="{{ url_for('static', filename = 'js/prism.js')}}"></script>
+    <link rel="icon" href="{{ url_for('static', filename = 'img/favicon.ico')}}" type="image/x-icon">    
+    <title>CodeHunter | Safari of Coding Jungle</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+            *{
+              font-family: 'Baloo Bhai 2', sans-serif;
+            }
+            
+            .navbar{
+              box-shadow: 3px 3px 20px lightgrey;
+            }
+            
+            .cheatsheet li{
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+            }
+    
+            .toolbar-item button, .toolbar-item >span{
+                cursor: pointer !important;
+                color: white !important;
+                border-radius: 5px  !important;
+                padding: 0px 5px !important;
+                margin: 0 3px !important;
+                font-size: 1rem !important;
+            }
+
+            .cheatsheet h2{
+              color: darkblue;
+            }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+           <a class="navbar-brand d-flex align-items-center" href="/">
+            <i class="fa fa-free-code-camp fa-2x"></i>
+             <b style="margin-left: 5px;">CodeHunter</b>
+           </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 1.1rem;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+<!-- BODY CONTENT HERE -->
+{% block body %} {% endblock %}
+
+<div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-image:url('static/img/h3.jpeg'); color: white;">
+          <h5 class="modal-title" id="contactModalLabel" >Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="/contact">
+            <div class="mb-3">
+              <i class="fa fa-user"> </i>
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3">
+              <i class="fa fa-envelope"> </i>
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <i class="fa fa-phone"> </i>
+              <label for="phone" class="form-label">Mobile Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone">
+              <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <i class="fa fa-comment"> </i>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="20" rows="5" class="form-control"></textarea>
+            </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <!-- <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button> -->
+              <button type="reset" class="btn btn-secondary">Reset</button>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <i class="fa fa-free-code-camp fa-2x"></i>
+            </a>
+            <span class="text-muted">© codehunter.com | 2021 - 2030</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="font-size: 1.5rem;">
+            <li class="ms-3"><a class="text-muted" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></li>
+            <li class="ms-3"><a class="text-muted" href="https://instagram.com" target="_blank">	
+                <i class="fa fa-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+          </ul>
+        </footer>
+      </div>
+</footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

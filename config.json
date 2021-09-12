@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "locar_server":"True",
+        "local_uri":"mysql://root:@localhost/codehunter",
+        "prod_uri":"mysql://root:@localhost/codehunter",
+        "gmail-user":"ssingh27aug@gmail.com",
+        "gmail-password":"Pr@shan1360"
+    }
+}

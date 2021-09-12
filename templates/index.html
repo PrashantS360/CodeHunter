@@ -1,0 +1,175 @@
+{% extends "layout.html" %}
+{% block body %}
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Learn and Practice
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/cpp">C++</a></li>
+              <li><a class="dropdown-item" href="/python">Python</a></li>
+              <li><a class="dropdown-item" href="/web">Web Development</a></li>
+              <li><a class="dropdown-item" href="/js">JavaScript</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/android">Other..</a></li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contact">
+              Contact us
+            </button>
+          </li>
+        </ul>
+        <form class="d-flex align-items-center">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/img/h1.jpeg" class="d-block w-100" alt="carousel" style="height: 80vh;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>The Best Coding Blog</h2>
+          <p style="font-size: 1.1rem;">Technology News, Development and Trends</p>
+          <a href="/cpp" class="btn btn-danger" role="button">C++</a>
+          <a href="/python" class="btn btn-primary" role="button">Python</a>
+          <a href="/web" class="btn btn-success" role="button">Web Development</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/img/h2.jpeg" class="d-block w-100" alt="carousel" style="height: 80vh;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Learn the simplest way</h2>
+          <p style="font-size: 1.1rem;">Practice and Learn the way you like</p>
+          <a href="/cpp" class="btn btn-danger" role="button">C++</a>
+          <a href="/python" class="btn btn-primary" role="button">Python</a>
+          <a href="/web" class="btn btn-success" role="button">Web Development</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="static/img/h3.jpeg" class="d-block w-100" alt="carousel" style="height: 80vh;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Save your time</h2>
+          <p style="font-size: 1.1rem;">Use our code instead of writing it again and again</p>
+          <a href="/cpp" class="btn btn-danger" role="button">C++</a>
+          <a href="/python" class="btn btn-primary" role="button">Python</a>
+          <a href="/web" class="btn btn-success" role="button">Web Development</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+
+  <div class="container my-5">
+    <div class="my-4">
+      <hr>
+    </div>
+    <div class="card-group">
+      <div class="card mb-3 mx-3 my-3" style="max-width: 540px; border: 1.5px solid lightgrey;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/img/cpp.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">C++</h5>
+              <p class="card-text">C++ is a general-purpose programming language created by Bjarne Stroustrup as an
+                extension of the C programming language, or "C with Classes"... <br><a href="/cpp"
+                  class="btn btn-primary" role="button">Explore</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 mx-3 my-3" style="max-width: 540px; border: 1.5px solid lightgrey;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/img/python.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Python is an interpreted high-level general-purpose programming language. Its design
+                philosophy emphasizes code readability with its use of significant indentation...<br><a
+                  href="/python" class="btn btn-primary" role="button">Explore</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 mx-3 my-3" style="max-width: 540px; border: 1.5px solid lightgrey;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/img/js.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">JavaScript, often abbreviated as JS, is a programming language that conforms to the
+                ECMAScript specification.
+                Widely used for developing puporses...<br><a href="/js" class="btn btn-primary"
+                  role="button">Explore</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-group ">
+      <div class="card mb-3 mx-3 my-3" style="max-width: 540px; border: 1.5px solid lightgrey;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/img/web.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Web development is the work involved in developing a Web site for the Internet or an
+                intranet. Web development can range from developing a simple single static page of plain text to complex
+                web applications...<br> <a href="web" class="btn btn-primary" role="button">Explore</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 mx-3 my-3" style="max-width: 540px; border: 1.5px solid lightgrey;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="static/img/android.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Android Development</h5>
+              <p class="card-text">Android software development is the process by which applications are created for
+                devices running the Android operating system. Android apps can be written using Kotlin, Java, and C++
+                languages...<br> <a href="/android" class="btn btn-primary" role="button">Explore</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ {% endblock %}

@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block body %}
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle  active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn and Practice
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/cpp">C++</a></li>
+                      <li><a class="dropdown-item" href="/python">Python</a></li>
+                      <li><a class="dropdown-item active" href="/web">Web Development</a></li>
+                      <li><a class="dropdown-item" href="/js">JavaScript</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/android">Other..</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contact">
+                        Contact us
+                      </button>
+                </li>
+        </ul>
+        <form class="d-flex align-items-center my-1">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+</nav>
+
+<div class="my-5 container" style="height: 0.1vh;"></div>
+<div class="container my-3" style="width: 80%; border-radius: 50px;">
+    <div class="card">
+        <img src="static/img/webdev.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2 style="color: rgb(0, 55, 173);">Web Development</h2>
+            <p class="card-text">Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+
+                Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding.Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-3 d-flex justify-content-center">
+    <ol class="cheatsheet" style="width: 70vw;">
+        <h2>HTML </h2>
+        <li><h5> Emmet</h5><pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></li>
+
+        <li><h5>Headings in HTML</h5><pre class="language-html"><code>&lt;h1&gt;This is heading1&lt;/h1&gt;
+&lt;h2&gt;This is heading2&lt;/h2&gt;
+&lt;h3&gt;This is heading3&lt;/h3&gt;
+&lt;h4&gt;This is heading4&lt;/h4&gt;
+&lt;h5&gt;This is heading5&lt;/h5&gt;
+&lt;h6&gt;This is heading6&lt;/h6&gt;</code></pre></li>
+
+        <li><h5> Paragraphs</h5><pre class="language-html"><code>&lt;p&gt;This is paragraph&lt;/p&gt;</code></pre></li>
+        <li><h5> Comments in HTML</h5><pre class="language-html"><code>&lt;!-- HTML Comments --&gt;</code></pre></li>
+        <li><h5> HTML Links</h5><pre class="language-html"><code>&lt;a href="https://codehunter.com"&gt;This is a link&lt;/a&gt;</code></pre></li>
+    </ol>
+</div>
+
+{% endblock %}

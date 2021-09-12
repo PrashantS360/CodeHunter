@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block body %}
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle  active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn and Practice
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/cpp">C++</a></li>
+                        <li><a class="dropdown-item" href="/python">Python</a></li>
+                        <li><a class="dropdown-item" href="/web">Web Development</a></li>
+                        <li><a class="dropdown-item" href="/js">JavaScript</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item active" href="/android">Other..</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contact">
+                        Contact us
+                      </button>
+                </li>
+        </ul>
+        <form class="d-flex align-items-center my-1">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+</nav>
+
+<div class="my-5 container" style="height: 0.1vh;"></div>
+<div class="container my-3" style="width: 80%; border-radius: 50px;">
+    <div class="card">
+        <img src="static/img/and.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2 style="color: rgb(0, 122, 0);">Android Development</h2>
+            <p class="card-text">Android software development is the process by which applications are created for devices running the Android operating system. Google states that "Android apps can be written using Kotlin, Java, and C++ languages" using the Android software development kit (SDK), while using other languages is also possible. All non-JVM languages, such as Go, JavaScript, C, C++ or assembly, need the help of JVM language code, that may be supplied by tools, likely with restricted API support. Some programming languages and tools allow cross-platform app support (i.e. for both Android and iOS). Third party tools, development environments, and language support have also continued to evolve and expand since the initial SDK was released in 2008. The official Android app distribution mechanism to end users is Google Play; it also allows staged gradual app release, as well as distribution of pre-release app versions to testers.</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

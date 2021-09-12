@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block body %}
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn and Practice
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/cpp">C++</a></li>
+                      <li><a class="dropdown-item active" href="/python">Python</a></li>
+                      <li><a class="dropdown-item" href="/web">Web Development</a></li>
+                      <li><a class="dropdown-item" href="/js">JavaScript</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/android">Other..</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contact">
+                        Contact us
+                      </button>
+                </li>
+        </ul>
+        <form class="d-flex align-items-center my-1">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+</nav>
+
+<div class="my-5 container" style="height: 0.1vh;"></div>
+<div class="container my-3" style="width: 80%; border-radius: 50px;">
+    <div class="card">
+        <img src="static/img/python1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2 style="color: rgb(134, 134, 1);">Python</h2>
+            <p class="card-text">Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+                Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-3 d-flex justify-content-center">
+    <ol class="cheatsheet" style="width: 70vw;">
+      <hr>
+      <h2>Introduction</h2>
+        <li><h5> Simple print statement</h5><pre class="language-py"><code>print("Welcome to CodeHunter")</code></pre></li>
+        <hr>
+        <h2>Conditions</h2>
+        <li><h5> If-Else Statement</h5><pre class="language-py"><code>statement = "Any value"
+if statemtent:
+    # Execute Part 1
+else: 
+    # Execute Part 2</code></pre></li>
+    <hr>
+    <h2>Loops</h2>
+        <li><h5> For Loop</h5><pre class="language-py"><code>start = 1
+end = 11
+# print i with new line characters till end-1
+for i in range(start, end):
+    print(i</code></pre></li>
+
+        <li><h5> While Loop</h5><pre class="language-py"><code>i = 1
+# print i with new line characters till 10
+while i!=11:
+    print(i)
+    # increment i by 1
+    i+=1</code></pre></li>
+    <hr>
+    </ol>
+</div>
+
+{% endblock %}

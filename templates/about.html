@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+{% block body %}
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn and Practice
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/cpp">C++</a></li>
+                        <li><a class="dropdown-item" href="/python">Python</a></li>
+                        <li><a class="dropdown-item" href="/web">Web Development</a></li>
+                        <li><a class="dropdown-item" href="/js">JavaScript</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/android">Other..</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contact">
+                        Contact us
+                      </button>
+                </li>
+        </ul>
+        <form class="d-flex align-items-center">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+</nav>
+
+<div class="my-5 container" style="height: 0.1vh;"></div>
+<div class="container" style="box-shadow: 2px 2px 40px rgb(210, 241, 252); width: 80vw;">
+  <div class="container my-3" >
+      <img src="static/img/about.jpg" alt="..." style="width: 100%;">
+  </div> <hr>
+  <div><p style="padding: 1vw;">CodeHunter was started in 2021 as an educational initiative for the programming community by Directi, an Indian software products company. Today, CodeHunter is one of the world’s largest and popular global competitive programming platforms preferred by student & professional programmers. In 2021, CodeHunter was added under the aegis of the Unacademy brand.<br> 
+
+    CodeHunter promotes constant learning and friendly programming competitions for its users, along with the support of its large community of problem curators.<br>
+    
+    CodeHunter was created as a platform to help programmers make it big in the world of algorithms, computer programming, and programming contests. It hosts three featured contests every month (Long Challenge, CookOff, LunchTime & Starters) and gives away prizes and goodies to the winners as encouragement. Apart from these, the platform is also open to the entire programming community, especially academic institutes, and student bodies, to host their own contests. Major institutions & corporates across the globe use CodeHunter’s platform to host their contests, internal & external coding assessments. On average, 30+ external contests are hosted on CodeHunter’s platform every month. <br>
+    
+    CodeHunter also partners with schools, colleges, and student groups to create local CodeHunter Chapters, meet-ups, orientation sessions & programming workshops. In addition, CodeHunter sponsors coding contests and teams of Indian programmers as part of its Go for Gold Initiative for ICPC & IOI.<br>
+    
+    SnackDown by CodeHunter is a world-renowned annual programming competition that attracts participation from programmers from 140+ countries.<br>
+    
+    Very recently, CodeHunter launched its new program - Learn Competitive Programming With CodeHunter - on Unacademy’s robust learning platform. Read more about this launch here.
+    <br>
+    CodeHunter’s YouTube Channels are also a source of free learning and knowledge for the community with video editorials and recorded problem-solving sessions from top-rated programmers.</p></div> <hr>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+         <h4>How It All Started And When?</h4> 
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">It was in the year 2009 that CodeHunter was founded in Mumbai, Maharashtra (India). The goal & the discussion point was - How to improve and expand the Indian programming community. This goal was shaped by the following turn of events: <br><br>
+
+          Directi had made its first visit to campus for hiring freshers in the year 2009. It was an active phase in Directi’s history when as an organization, it wanted to make a significant transition. Directi wanted to build some great products, and for that, it wanted to hire the best talent from across the country. It was a big leap for Directi. The only question was how? <br><br>
+          
+          Key members at Directi were in a discussion and came to know about the ICPC through a few of their lateral hires. The members explored more about ICPC, and it was then that they figured out for the first time the value of competitive programming, also known as Sports Programming. <br><br>
+          
+          It dawned on the team that there was a direct correlation between the best software engineers and the best competitive programmers. While the team did find a path towards their hunt for the best talent, they realized a bigger problem that India was facing. <br><br>
+          
+          They came to know how poorly India had been performing at ICPC, the most prestigious international programming event across the globe. In spite of the vast amount of intellectual talent available in the country, India’s performance has not been close to top-notch. It was disheartening to see India lagging behind vis-a-vis other nations when it came to solving complex programming problems. The team launched CodeHunter as an experiment to address this situation. They wanted Indian students to have fun while learning & improving. It was also important for them to bring the global competition home so that Indian students can learn to compete with the best out there. <br><br>
+          
+          In 2010, CodeHunter launched the Go For Gold program. The goal of the Go for Gold Project is ambitious: CodeHunter wanted an Indian college team to win the ICPC contest, the most competitive programming challenge in the world. In 2013, CodeHunter extended the Go For Gold program to cover the International Olympiad in Informatics for school students. And in the year 2020, the custodianship of CodeHunter was transferred from Directi to Unacademy. <br><br>
+          
+          <b>More than a million programmers worldwide have joined CodeHunter so far, and we're always looking for more.</b> </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h4>Initiatives Taken Up By Us</h4> 
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <ul >
+            <li><b>Host your own programming contest:</b> CodeHunter provides its platform to any educational institute and organization across the globe to conduct its own programming contests. Under this initiative, CodeHunter takes care of the infrastructure, platform, and support aspect of hosting the contest.</li>
+        <li><b>CodeHunter College Chapters:</b> College Chapters are programming clubs targeted specifically towards competitive programming, which are guided and mentored by CodeHunter. The idea behind forming College Chapters is to create a strong culture of competitive programming across all colleges and schools in India and exchange knowledge amongst themselves using the CodeHunter platform.</li>
+        <li><b>Learn Competitive Programming with CodeHunter:</b> CodeHunter has launched live courses on Competitive Programming, taught by the most passionate competitive programmers, and helped by a great team of teaching assistants. It was launched on Unacademy on 15th September.</li>
+        <li><b>Learn Competitive Programming with CodeHunter:</b> CodeHunter has launched live courses on Competitive Programming, taught by the most passionate competitive programmers, and helped by a great team of teaching assistants. It was launched on Unacademy on 15th September.</li>
+        <li><b>Conversations with CodeHunter:</b> CodeHunter has come up with a series of Ask Me Anything (AMA) live sessions called Conversations with CodeHunter. Here we talk with the leading figures in the corporate world and the people who have made significant progress in their programming careers, aiming to provide the viewers with all the insights about how they made it big in their fields.</li>
+      </ul></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <h4>CodeHunter for Schools</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">CodeHunter has started promoting competitive programming among school students by creating awareness about the International Olympiads in Informatics (IOI). It also has freely accessible learning resources for school students to prepare them for the Olympiad. Several workshops have been conducted in schools with the help of our ‘problem-solving through programming’ curriculum. A learning program was started by the team to help students preparing for the ICO.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

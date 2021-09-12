@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+{% block body %}
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle  active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Learn and Practice
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/cpp">C++</a></li>
+                      <li><a class="dropdown-item" href="/python">Python</a></li>
+                      <li><a class="dropdown-item" href="/web">Web Development</a></li>
+                      <li><a class="dropdown-item active" href="/js">JavaScript</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/android">Other..</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contact">
+                        Contact us
+                      </button>
+                </li>
+        </ul>
+        <form class="d-flex align-items-center my-1">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+</nav>
+
+<div class="my-5 container" style="height: 0.1vh;"></div>
+<div class="container my-3" style="width: 80%; border-radius: 50px;">
+    <div class="card">
+        <img src="{{url_for('static', filename = 'img/javascript.jpg')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2 style="color: rgb(182, 100, 0);">JavaScript</h2>
+            <p class="card-text">JavaScript , often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+
+                Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. Over 97% of websites use it client-side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on the user's device.
+                
+                As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-3 d-flex justify-content-center">
+  <ol class="cheatsheet" style="width: 70vw;">
+    <hr>
+    <h2>Introduction</h2>
+        <li><h5> First Program</h5><pre class="language-js"><code>console.log('Welcome to CodeHunter');</code></pre></li>
+        <hr>
+        <h2>Conditions</h2>
+        <li><h5> If-Else Statement</h5><pre class="language-js"><code>if (condition) {
+    //  block of code to be executed if the condition is true
+        } 
+else {
+    //  block of code to be executed if the condition is false
+}</code></pre></li>
+        <li><h5> Switch Statement</h5><pre class="language-js"><code>switch (new Date().getDay()) {
+    case 0:
+    day = "Sunday";
+    break;
+    case 1:
+    day = "Monday";
+    break;
+    case 2:
+    day = "Tuesday";
+    break;
+    case 3:
+    day = "Wednesday";
+    break;
+    case 4:
+    day = "Thursday";
+    break;
+    case 5:
+    day = "Friday";
+    break;
+    case 6:
+    day = "Saturday";
+}</code></pre></li>
+        <hr>
+        <h2>Loops</h2>
+        <li><h5> For Loop</h5><pre class="language-js"><code>for (let i = 0; i &lt; 10; i++) {
+    // some code
+}</code></pre></li>
+        <li><h5> While Loop</h5><pre class="language-js"><code>let i = 0;
+while (i &lt; 10) {
+    text += "The number is " + i;
+    i++;
+}</code></pre></li>
+ <hr>
+    </ol>
+</div>
+
+{% endblock %}
